@@ -45,18 +45,6 @@ StepUp is a high-performance cross-platform footwear e-commerce application desi
 
 ---
 
-## 📱 Screenshots
-
-| Home Feed | Catalog & Filters | Checkout Flow |
-|:---:|:---:|:---:|
-| *(Add your screenshot here)* | *(Add your screenshot here)* | *(Add your screenshot here)* |
-
-| Shipment Tracking | Admin Dashboard | Admin Profile |
-|:---:|:---:|:---:|
-| *(Add your screenshot here)* | *(Add your screenshot here)* | *(Add your screenshot here)* |
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -72,3 +60,23 @@ StepUp is a high-performance cross-platform footwear e-commerce application desi
 ```bash
    git clone [https://github.com/](https://github.com/)<your-username>/stepup-footwear-app.git
    cd stepup-footwear-app
+
+lib/
+├── admin/
+│   ├── admin_dashboard.dart       # Main admin console with custom charts
+│   ├── admin_profile_screen.dart  # Super admin credentials and status
+│   ├── admin_products_screen.dart # Inventory management
+│   ├── admin_orders_screen.dart   # Order processing
+│   ├── admin_users_screen.dart    # User directory
+│   ├── admin_payments_screen.dart # Financial audit
+│   └── admin_reviews_screen.dart  # Customer feedback moderation
+├── api_service.dart               # REST communication with Google Sheets
+├── invoice_service.dart           # PDF invoice generator
+├── index.dart                     # Discovery feed & home screen
+├── shop.dart                      # Shoe catalog, filtering, & checkout modal
+├── cart.dart                      # Cart management screen
+├── wishlist.dart                  # Bookmarked footwear view
+├── track_order.dart               # Order timeline stepper & bill download
+├── notifications_screen.dart      # Live push-style updates & bill links
+├── profile.dart                   # Customer membership dashboard
+└── main.dart                      # App entry point & theme configurations
